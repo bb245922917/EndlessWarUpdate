@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "version_name": "0.1.6.7",
-  "version_code": 193,
-  "updated": "2026-09-14 03:31:52",
+  "version_name": "0.1.6.8",
+  "version_code": 194,
+  "updated": "2026-09-14 04:22:44",
   "notice": {
     "Name": "1",
-    "详情中文": "版本号:V 0.1.6.7\n1.增强技能伤害范围；\n2.资源获得更容易；\n3.提升广告响应速度;\n4.修复战斗中观看广告，导致游戏卡死的问题;\n5.修复若干Bug。",
-    "详情英文": "Version: V 0.1.6.7\n1. Enhanced skill damage range;  \n2. Easier resource acquisition;  \n3. Improved ad response speed;  \n4. Fixed the issue where watching ads during combat caused game crashes;  \n5. Resolved several bugs.",
-    "详情日文": "バージョン:V 0.1.6.7\n1.スキルのダメージ範囲を強化；\n2.リソースの獲得を容易に；\n3.広告の応答速度を向上；\n4.戦闘中に広告を視聴するとゲームがフリーズする問題を修正；\n5.いくつかのバグを修正。",
-    "详情韩文": "버전:V 0.1.6.7\n1.스킬 피해 범위 강화；\n2.자원 획득 용이；\n3.광고 응답 속도 향상；\n4.전투 중 광고 시청으로 게임이 멈추는 문제 수정；\n5.여러 버그 수정。"
+    "详情中文": "版本号:V 0.1.6.8\n1.增强技能伤害范围；\n2.资源获得更容易；\n3.提升广告响应速度;\n4.修复战斗中观看广告，导致游戏卡死的问题;\n5.修复若干Bug。",
+    "详情英文": "Version: V 0.1.6.8\n1. Enhanced skill damage range;  \n2. Easier resource acquisition;  \n3. Improved ad response speed;  \n4. Fixed the issue where watching ads during combat caused game crashes;  \n5. Resolved several bugs.",
+    "详情日文": "バージョン:V 0.1.6.8\n1.スキルのダメージ範囲を強化；\n2.リソースの獲得を容易に；\n3.広告の応答速度を向上；\n4.戦闘中に広告を視聴するとゲームがフリーズする問題を修正；\n5.いくつかのバグを修正。",
+    "详情韩文": "버전:V 0.1.6.8\n1.스킬 피해 범위 강화；\n2.자원 획득 용이；\n3.광고 응답 속도 향상；\n4.전투 중 광고 시청으로 게임이 멈추는 문제 수정；\n5.여러 버그 수정。"
   },
   "rewards": [
     {
