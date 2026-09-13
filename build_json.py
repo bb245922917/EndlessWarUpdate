@@ -27,6 +27,7 @@
 import os
 import sys
 import json
+import re
 from datetime import datetime
 
 try:
@@ -180,6 +181,38 @@ def pick_version_name(cn_text):
     return ""
 
 
+# 四语言版本行前缀。正文首行形如「版本号:V 0.1.6.4」「Version: V 0.1.6.4」等。
+VER_LINE_PREFIXES = ("版本号:", "版本号：", "Version:", "Version：", "バージョン:", "버전:")
+_VER_NUM_RE = re.compile(r"\d+(?:\.\d+)+")
+
+
+def is_version_line(line):
+    s = line.strip()
+    return any(s.startswith(p) for p in VER_LINE_PREFIXES)
+
+
+def set_notice_version(langs, ver):
+    """把四语正文首个版本行的版本号改写为 ver（保留原有前缀与「V 」风格）。
+    例：「版本号:V 0.1.6.4」+ 0.1.6.5 → 「版本号:V 0.1.6.5」。
+    只改第一个版本行的数字部分，其余行（含描述内容）一律不动。"""
+    if not (ver or "").strip():
+        return langs
+    ver = ver.strip()
+    out = dict(langs)
+    for k, v in out.items():
+        if not isinstance(v, str):
+            continue
+        lines = v.replace("\r\n", "\n").split("\n")
+        for i, line in enumerate(lines):
+            if is_version_line(line):
+                m = _VER_NUM_RE.search(line)
+                if m:
+                    lines[i] = line[:m.start()] + ver + line[m.end():]
+                    out[k] = "\n".join(lines)
+                break
+    return out
+
+
 def fix_notice_xlsx():
     rows = read_xlsx(NOTICE_XLSX)
     if rows is None:
@@ -282,6 +315,11 @@ def build(override_version_name=None, override_version_code=None):
         )
 
     notice = {"Name": _text(n.get("编号")) or "1"}
+    # 打包流水线传入游戏版本（--version-name）时，同步改写四语正文的版本行：
+    #   勾选递增 → 写"本次将打出的版本"；取消递增 → 写当前 UE 配置版本。
+    # 版本行以外的描述内容仍以数据源 xlsx 为准，不做任何改动。
+    if (override_version_name or "").strip():
+        langs = set_notice_version(langs, override_version_name.strip())
     for k in OUT_ORDER:
         notice[k] = langs[k]
 
