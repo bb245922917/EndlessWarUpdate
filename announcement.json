@@ -1,25 +1,25 @@
 {
   "schema": 1,
-  "version_name": "0.1.6.9",
-  "version_code": 195,
-  "updated": "2026-09-16 14:52:18",
+  "version_name": "0.1.7.0",
+  "version_code": 196,
+  "updated": "2026-09-20 00:46:20",
   "notice": {
     "Name": "1",
-    "详情中文": "版本号:V 0.1.6.9\nv 0.1.6.8版本出现重大Bug，导致游戏崩溃，非常抱歉影响您的体验，请更新到最新版本，体验完整游戏。\n为了补偿您，更新完游戏以后，您将领取到大量的金币和钻石，来弥补对您的困扰。\n再次感谢您的支持！",
-    "详情英文": "Version: V 0.1.6.9\nv 0.1.6.8 has a critical bug that causes the game to crash. We are very sorry for affecting your experience. Please update to the latest version to enjoy the full game.\nTo compensate you, after updating the game, you will receive a large amount of Gold and Diamonds to make up for the trouble caused to you.\nThank you again for your support!",
-    "详情日文": "バージョン:V 0.1.6.9\nv 0.1.6.8バージョンで重大なバグが発生し, ゲームがクラッシュしました. 体験に影響を与え, 大変申し訳ございません. 最新バージョンに更新して, 完全なゲームをお楽しみください.\n償として, ゲーム更新後に, 大量のゴールドとダイヤを受け取れます. ご迷惑をおかけしたお詫びです.\n改めて, ご支援に感謝いたします!",
-    "详情韩文": "버전:V 0.1.6.9\nv 0.1.6.8 버전에서 중대한 버그가 발생하여 게임이 충돌했습니다. 체험에 영향을 주어 매우 죄송합니다. 최신 버전으로 업데이트하여 완전한 게임을 즐겨 주세요.\n보상으로, 게임 업데이트 후, 대량의 골드와 다이아를 받으실 수 있습니다. 불편을 끼친 점을 보상해 드립니다.\n다시 한 번 지원에 감사드립니다!"
+    "详情中文": "版本号:V 0.1.7.0\n1.提高游戏的稳定性；\n2.增加对安卓8.0、安卓9.0的支持：\n3.修复Bug。",
+    "详情英文": "Version: V 0.1.7.0\n1.Improve game stability;\n2.Add support for Android 8.0, Android 9.0:\n3.Fix bugs.",
+    "详情日文": "バージョン:V 0.1.7.0\n1.ゲームの安定性を向上;\n2.Android 8.0, Android 9.0のサポートを追加:\n3.バグを修正.",
+    "详情韩文": "버전:V 0.1.7.0\n1.게임 안정성 향상;\n2.안드로이드 8.0, 안드로이드 9.0 지원 추가:\n3.버그 수정."
   },
   "rewards": [
     {
       "ID": "3",
       "奖励名称": "金币",
-      "奖励数量": 6000
+      "奖励数量": 6666
     },
     {
       "ID": "4",
       "奖励名称": "钻石",
-      "奖励数量": 5000
+      "奖励数量": 888
     }
   ]
 }
